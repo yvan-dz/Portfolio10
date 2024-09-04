@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio - Michael Johnson</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Preloader with star animation and name -->
+    <div id="preloader">
+        <canvas id="starsCanvas"></canvas>
+        <h1 id="preloader-name"></h1> <!-- The name will be displayed by JS -->
+    </div>
+
+    <!-- Main content of the page -->
+    <div id="main-content" style="display:none;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Michael Johnson</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with AOS -->
+<section id="home" class="d-flex justify-content-center align-items-center text-center hero-section" data-aos="fade-in">
+    <canvas id="meteors"></canvas> <!-- Canvas for meteors -->
+    <div class="content">
+        <h1 class="display-3 text-white">Michael Johnson</h1>
+        <p class="lead text-white">Computer Science Student & Web Developer</p>
+        <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
+    </div>
+</section>
+
+<!-- About Section with AOS -->
+<section id="about" class="py-5" data-aos="fade-up">
+    <div class="container text-center">
+        <h2 class="mb-5">About Me</h2>
+        <div class="row justify-content-center align-items-center">
+            <!-- Colonne pour l'image -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://img.freepik.com/premium-photo/young-african-american-man-brown-jacket-poses-street_115318-8153.jpg" alt="Michael Johnson" class="profile-img img-fluid rounded-circle">
+            </div>
+            <!-- Colonne pour le texte -->
+            <div class="col-lg-8 col-md-6">
+                <p>I am an Afro-American student passionate about web development and technology. I am always looking for new opportunities to improve my programming skills and build innovative projects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Education Section -->
+<section id="education" class="py-5 bg-light">
+    <div class="container text-center" data-aos="fade-up">
+        <h2 class="mb-5">Education</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <!-- First School -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <h4>Bachelor in Computer Science - University of California</h4>
+                    <span>2021 - 2024</span>
+                    <p>Studying advanced software development, operating systems, and networks. Engaged in practical projects focused on web and mobile app development.</p>
+                </div>
+                <!-- Second School -->
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <h4>High School Diploma - Westbrook High School</h4>
+                    <span>2018 - 2021</span>
+                    <p>Graduated with a specialization in mathematics and computer science. Strong focus on technology and programming languages.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section with AOS -->
+<section id="skills" class="bg-light py-5" data-aos="fade-up">
+    <div class="container text-center">
+        <h2 class="mb-5">Skills</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="flip-left">
+                <i class="fas fa-code fa-3x mb-3"></i>
+                <h4>Web Development</h4>
+                <p>HTML, CSS, JavaScript, Bootstrap</p>
+            </div>
+            <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                <h4>Programming</h4>
+                <p>Python, Java, C++, Git</p>
+            </div>
+            <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                <i class="fas fa-database fa-3x mb-3"></i>
+                <h4>Databases</h4>
+                <p>MySQL, PostgreSQL, MongoDB</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section with AOS -->
+<section id="projects" class="py-5" data-aos="fade-up">
+    <div class="container text-center">
+        <h2 class="mb-5">Projects</h2>
+        <div class="row">
+            <div class="col-lg-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="https://t3.ftcdn.net/jpg/03/54/17/86/360_F_354178616_uSdqA6i1A1vkkskFPKOoxQOED0ZMIcn3.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Website</h5>
+                        <p class="card-text">Created a personal website to showcase my portfolio and projects.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card">
+                    <img src="https://fuselabcreative.com/wp-content/uploads/2023/07/mobile-apps-design-trends.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App</h5>
+                        <p class="card-text">Developed a mobile app for task management.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card">
+                    <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4085894/cover_image/retina_1708x683/cover-5-new-things-rest-specification-b57cfaa8cdfef2fd572ae3e7afbe02f8.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">REST API</h5>
+                        <p class="card-text">Built a REST API for a user management application.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section with AOS -->
+<section id="contact" class="bg-dark text-white py-5" data-aos="fade-up">
+    <div class="container text-center">
+        <h2 class="mb-5">Contact Me</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control contact-input" placeholder="Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control contact-input" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control contact-input" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary contact-btn btn-block">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Michael Johnson - All rights reserved</p>
+    <p>Conçu par <a href="https://websnape.de/" target="_blank">WebSnape by Yvan</a></p>
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // Animation duration in ms
+    once: false,     // Animation runs once
+  });
+</script>
+
+</body>
+
+</html>

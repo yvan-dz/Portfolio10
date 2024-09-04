@@ -1,0 +1,550 @@
+/* Fontes principales */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    background-color: #f7f7f7;
+    line-height: 1.7;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #2e8595 !important; /* Bleu Marine */
+    transition: color 0.4s ease;
+}
+
+.navbar-brand:hover {
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+    color: #FFD700 !important; /* Jaune Doré */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Jaune Doré */
+}
+
+/* Section Hero */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    z-index: 1;
+    color: #FFD700; /* Jaune Doré */
+    position: relative;
+}
+
+.hero-section .btn-primary {
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #002855; /* Bleu Marine */
+    border: none;
+    z-index: 1;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    color: #fff;
+    background-color: #FFD700; /* Jaune Doré */
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Canvas des météorites */
+#meteors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Effets de texte */
+.hero-section h1,
+.hero-section p {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.hero-section h1:hover {
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+/* Education Section */
+#education {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+#education h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+#education h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #333333; /* Jaune Doré */
+    margin: 20px auto 0;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #002855; /* Bleu Marine */
+}
+
+.timeline-item span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+#education .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 4px;
+    height: 100%;
+    background: #002855; /* Bleu Marine */
+}
+
+#education .timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    background: #FFD700; /* Jaune Doré */
+    border-radius: 50%;
+}
+
+/* Skills Section */
+#skills {
+    position: relative;
+    padding: 100px 0;
+    background: linear-gradient(45deg, #002855, #333333);
+    color: #fff;
+    overflow: hidden;
+}
+
+#skills h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #fff; /* Jaune Doré */
+    margin: 20px auto 0;
+}
+
+#skills h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+#skills .col-md-4 {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+#skills .col-md-4:hover {
+    transform: scale(1.1);
+}
+
+#skills i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #FFD700; /* Jaune Doré */
+}
+
+#skills h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#skills p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* Projects Section */
+#projects {
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+#projects h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #333333; /* Jaune Doré */
+    margin: 20px auto 0;
+}
+
+#projects .card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background-color: #333333;
+    color: #fff;
+}
+
+#projects .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#projects .card-title {
+    font-size: 1.5rem;
+    color: #FFD700; /* Jaune Doré */
+}
+
+#projects .card-text {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+#projects .btn-primary {
+    background-color: #002855; /* Bleu Marine */
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#projects .btn-primary:hover {
+    background-color: #FFD700; /* Jaune Doré */
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 0;
+    background-color: #222831;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    color: #fff; /* Jaune Doré */
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+#contact h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #fff; /* Jaune Doré */
+    margin: 20px auto 0;
+}
+
+/* Styles pour les champs de formulaire */
+.contact-input {
+    background-color: transparent;
+    border: 1px solid #478edf; /* Bleu Marine */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 30px; /* Bordures arrondies */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-input::placeholder {
+    color: #aaa;
+    opacity: 0.7;
+}
+
+.contact-input:focus {
+    background-color: transparent;
+    border-color: #FFD700; /* Jaune Doré */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Lumière douce autour des champs lors du focus */
+    outline: none;
+    transform: scale(1.03); /* Légère mise en avant des champs */
+}
+
+/* Styles pour le bouton d'envoi */
+.contact-btn {
+    background-color: #002855; /* Bleu Marine */
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn:hover {
+    background-color: #FFD700; /* Jaune Doré */
+    color: #002855; /* Bleu Marine */
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Form responsive styles */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #222831;
+    padding: 30px 0;
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer p a {
+    text-decoration: none;
+}
+
+
+/* Préchargement */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#preloader canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#preloader-name {
+    font-size: 3rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Contenu principal caché au départ */
+#main-content {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+/* Media Queries pour mobile */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    /* Hero Section */
+    .hero-section h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .hero-section .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Education Section */
+    #education h2 {
+        font-size: 2.5rem;
+    }
+
+    .timeline-item{
+        max-width: 90%;
+        margin-left: 6%;
+    }
+
+    .timeline-item h4 {
+        font-size: 1.4rem;
+    }
+
+    .timeline-item p {
+        font-size: 1rem;
+    }
+
+    /* Skills Section */
+    #skills h2 {
+        font-size: 2.5rem;
+    }
+
+    #skills i {
+        font-size: 3rem;
+    }
+
+    #skills h4 {
+        font-size: 1.4rem;
+    }
+
+    #skills p {
+        font-size: 1rem;
+    }
+
+    /* Projects Section */
+    #projects h2 {
+        font-size: 2.5rem;
+    }
+
+    #projects .card-title {
+        font-size: 1.2rem;
+    }
+
+    #projects .card-text {
+        font-size: 1rem;
+    }
+
+    /* Contact Section */
+    #contact h2 {
+        font-size: 2.5rem;
+    }
+
+    #contact .form-control {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Query pour réduire la taille du nom sur les petits écrans */
+@media (max-width: 768px) {
+    #preloader-name {
+        font-size: 2rem; /* Diminuer la taille de la police pour les petits écrans */
+    }
+}
+
+/* Style de l'image de profil circulaire */
+.profile-img {
+    width: 250px; /* Largeur fixe pour assurer que l'image est carrée */
+    height: 250px; /* Hauteur fixe pour assurer que l'image est carrée */
+    border-radius: 50%; /* Bordures arrondies pour rendre l'image circulaire */
+    border: 5px solid #00adb5; /* Bordure colorée autour de l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    object-fit: cover; /* S'assure que l'image reste bien cadrée dans son conteneur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'animation au survol */
+}
+
+/* Effet au survol de l'image */
+.profile-img:hover {
+    transform: scale(1.05); /* Agrandir légèrement l'image au survol */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+}
+
+/* Style supplémentaire pour les écrans plus petits */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 150px; /* Réduire la taille de l'image sur les petits écrans */
+        height: 150px; /* Hauteur égale pour garder l'image circulaire */
+        margin: 0 auto; /* Centrer l'image */
+    }
+}
